@@ -237,6 +237,52 @@ hr{
     bottom: 40%;
     opacity: 1;
 }
+#testimonials{
+    width: 100%;
+    padding: 70px 0;
+}
+.testimonials-row{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.testimonials-col{
+    flex-basis: 28%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 3px #00968814;
+    cursor: pointer;
+    transition:transForm .5s;
+}
+.testimonials-col p{
+    font-size:14px;
+}
+.user{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.user img{
+    width: 40px;
+    margin-right:20px ;
+    border-radius: 3px;
+}
+.user-info .fa{
+    margin-left:10px ;
+    color: var(--btn-color);
+    font-size: 20px;
+}
+.user-info small{
+    color: #0096;
+}
+.testimonials-col:hover{
+    transform: translateY(-7px);
+}
+
 @media only screen and (max-width: 700px){
     .banner-text h1{
         font-size: 44px;
