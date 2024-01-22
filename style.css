@@ -185,4 +185,18 @@ nav ul li{
         display: block;
         margin: 20px auto;
     }
-}
+}@media only screen and (max-width: 770px){
+    .title-text h1{
+        font-size: 35px;
+    }
+    .staff{
+        flex-basis:100% ;
+    }
+    .staff img{
+        flex-basis:100% ;
+    }
+    .staff img img{
+        width: 100%;
+    }
+
+    }
