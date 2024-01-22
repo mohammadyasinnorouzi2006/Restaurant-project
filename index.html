@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
   <meta name="viewport" content="width-device-width, initial-scale-1.0">
     <title>RESTORAN</title>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap" rel="stylesheet">
@@ -28,11 +29,11 @@
 <div id="sidenav">
     <nav>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Staff</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Testimonial</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#banner">Home</a></li>
+            <li><a href="#staff">Staff</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#testimonials">Testimonial</a></li>
+            <li><a href="#footer">Contact</a></li>
         </ul>
     </nav>
 </div>
@@ -167,8 +168,33 @@
         </div>
     </div>
 </section>
-
-
+<section id="footer">
+<img src="img/food.webp" alt="" class="footer-img">
+<div class="title-text">
+    <P>CONTACT</P>
+    <h1>Come And Taste Today</h1>
+</div>
+<div class="footer-row">
+    <div class="footer-left">
+        <h1>Opening Hours</h1>
+        <p><i class="fa fa-clock-o">Monday to Friday - 9am to 9pm</i></p>
+        <p><i class="fa fa-clock-o">Saturday and Sunday - 9am to 11pm</i></p>
+    </div>
+    <div class="footer-right">
+        <h1>Get in Touch</h1>
+        <p>#25 Indiranagar, Bangaluru, India <i class="fa fa-map-maker"></i></p>
+        <p>codeiscidespase@gmail.com<i class="fa fa-paper-plane"></i></p>
+        <p>+9111111111<i class="fa fa-phone"></i></p>
+    </div>
+</div>
+<div class="social-link">
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-youtube-play"></i>
+    <p>Copyright codeSpace YoutubeChannel</p>
+</div>
+</section>
 <script>
     var menubtn = document.getElementById("menubtn")
     var sidenav = document.getElementById("sidenav")
@@ -185,6 +211,10 @@
             menu.src="img/bx-menu.svg";
         }
     }
+    var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 500,
+        speedAsDuration: true
+    });
 </script>
 </body>
 </html>
