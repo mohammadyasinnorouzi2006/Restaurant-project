@@ -254,7 +254,7 @@ hr{
     padding: 10px;
     margin-bottom: 30px;
     border-radius: 5px;
-    box-shadow: 0 10px 20px 3px #00968814;
+    box-shadow: 0 10px 20px 3px var(--btn-color);
     cursor: pointer;
     transition:transForm .5s;
 }
@@ -277,7 +277,7 @@ hr{
     font-size: 20px;
 }
 .user-info small{
-    color: #0096;
+    color:var(--btn-color) ;
 }
 .testimonials-col:hover{
     transform: translateY(-7px);
@@ -316,5 +316,10 @@ hr{
     }
     .single-service:hover .service-desc{
         bottom: 25% !important;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .testimonials-col{
+        flex-basis: 100%;
     }
 }
